@@ -11,7 +11,7 @@ html {
     rgba(0, 0, 0),
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: white;
 }
 
 .purple {
@@ -94,7 +94,7 @@ html {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: white !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -191,7 +191,7 @@ html {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #623686;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -275,17 +275,17 @@ html {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: white;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: white !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: #623686 !important;
 }
 
 @media (max-width: 767px) {
@@ -431,7 +431,7 @@ html {
 }
 
 .blockquote-footer {
-  color: #a588c0 !important;
+  color: #623686 !important;
 }
 /* --------- */
 /* Projects */
