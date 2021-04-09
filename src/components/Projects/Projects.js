@@ -84,10 +84,6 @@ function Projects() {
         </h1>
         <h6>Will be made available soon</h6>
 
-        <h1 className="project-heading">
-          <strong className="purple">Deep learning</strong>
-        </h1>
-        <h6>Will be made available soon</h6>
       </Container>
     </Container>
   );

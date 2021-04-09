@@ -15,20 +15,20 @@ function Particle() {
 	        },
 	        "line_linked": {
 	            "enable": true,
-	            "opacity": 0.02
+	            "opacity": 0.05
 	        },
 	        "move": {
 	            "direction": "right",
 	            "speed": 0.05
 	        },
 	        "size": {
-	            "value": 1.8
+	            "value": 2
 	        },
 	        "opacity": {
 	            "anim": {
 	                "enable": true,
-	                "speed": 1,
-	                "opacity_min": 0.05
+	                "speed": 0.7,
+	                "opacity_min": 0.04
 	            }
 	        }
 	    },
