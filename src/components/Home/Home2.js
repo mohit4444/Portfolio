@@ -35,17 +35,17 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://mohitportolio.netlify.app/"
+                  href="https://www.facebook.com/mohit.bidikar"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <i className="fab fa-github"></i>
+                  <i className="fab fa-facebook"></i>
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://mohitportolio.netlify.app/"
+                  href="https://in.linkedin.com/in/mohit-bidikar-756348123"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -55,7 +55,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://mohitportolio.netlify.app/"
+                  href="https://www.instagram.com/mohitttt4/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"

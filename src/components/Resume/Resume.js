@@ -77,7 +77,7 @@ function Resume() {
             />
             <Resumecontent
               title="Version control"
-              content={["Apache Subversion(SVN)", "GitLab"]}
+              content={["Apache Subversion(SVN)", "GitLab", "GitHub"]}
             />
 
             <Resumecontent
@@ -89,11 +89,17 @@ function Resume() {
               title="Computer networking"
               content={["Configuring routers", "Configuring switches", "Hardware troubleshooting"]}
             />
+
+            <Resumecontent
+              title="Proficient in"
+              content={["Javascript", "Python", "Java"]}
+            />
           </Col>
         </Row>
 
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
           <Techstack iconName="cib-java" />
+          <Techstack iconName="cib-python" />
           <Techstack iconName="cib-postgresql" />
           <Techstack iconName="devicon-javascript-plain " />
           <Techstack iconName="devicon-nodejs-plain-wordmark " />
