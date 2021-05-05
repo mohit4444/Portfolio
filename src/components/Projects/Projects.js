@@ -44,7 +44,7 @@ function Projects() {
               imgPath={nodeexecutable}
               isBlog={false}
               title="Packaging in node"
-              description="Simplified CRUD app using node js,express js and mysql"
+              description="Create an executable of the express project to hide the source code"
               link="https://github.com/mohit4444/Packaging-node"
             />
           </Col>
@@ -66,7 +66,10 @@ function Projects() {
           </Col>
 
         </Row>
-
+        <h1 className="project-heading">
+          <strong className="purple">Exoplanets transits using lightkurve</strong>
+        </h1>
+        <h6>Will be made available soon</h6>
 
         <h1 className="project-heading">
           <strong className="purple">Native Android</strong>
