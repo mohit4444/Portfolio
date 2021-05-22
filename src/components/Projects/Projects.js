@@ -9,6 +9,7 @@ import expressmongo from "../../Assets/Projects/expressmongo.jpeg";
 import expressmysql from "../../Assets/Projects/expressmysql.jpg";
 import nodeexecutable from "../../Assets/Projects/nodeexecutable.png";
 import portfolio from "../../Assets/Projects/portfolio.jpg";
+import money from "../../Assets/Projects/money.jpeg";
 
 
 function Projects() {
@@ -62,6 +63,16 @@ function Projects() {
               title="Porfolio"
               description="Portfolio you are viewing made using react js"
               link="https://github.com/mohit4444/Portfolio"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={money}
+              isBlog={false}
+              title="Money Saved"
+              description="Money saved web application made using react js,express js and mongodb"
+              link="https://github.com/mohit4444/Money-saved-web-app"
             />
           </Col>
 

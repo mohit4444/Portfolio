@@ -72,6 +72,10 @@ function Resume() {
               content={["PostgreSQL", "MS SQL", "MongoDB"]}
             />
             <Resumecontent
+              title="Microservices"
+              content={["Docker"]}
+            />
+            <Resumecontent
               title="Testing"
               content={["TestNG", "Selenium WebDriver"]}
             />
@@ -101,6 +105,7 @@ function Resume() {
           <Techstack iconName="cib-java" />
           <Techstack iconName="cib-python" />
           <Techstack iconName="cib-postgresql" />
+          <Techstack iconName="cib-docker" />
           <Techstack iconName="devicon-javascript-plain " />
           <Techstack iconName="devicon-nodejs-plain-wordmark " />
           <Techstack iconName="devicon-express-original-wordmark" />
