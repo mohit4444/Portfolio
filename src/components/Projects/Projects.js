@@ -10,7 +10,7 @@ import expressmysql from "../../Assets/Projects/expressmysql.jpg";
 import nodeexecutable from "../../Assets/Projects/nodeexecutable.png";
 import portfolio from "../../Assets/Projects/portfolio.jpg";
 import money from "../../Assets/Projects/money.jpeg";
-
+import docker from "../../Assets/Projects/docker.jpeg";
 
 function Projects() {
   return (
@@ -75,6 +75,18 @@ function Projects() {
               link="https://github.com/mohit4444/Money-saved-web-app"
             />
           </Col>
+
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={docker}
+              isBlog={false}
+              title="Money Saved with Docker"
+              description="Money saved web application made using react js,express js and mongodb.The back-end(express and mongo) runs in a dockerised container"
+              link="https://github.com/mohit4444/docker"
+            />
+          </Col>
+
 
         </Row>
         <h1 className="project-heading">
