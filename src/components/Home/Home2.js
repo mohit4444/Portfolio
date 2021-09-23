@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/dp.jfif";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Tilt from "react-parallax-tilt";
 
 function Home2() {
   return (
@@ -21,9 +20,8 @@ function Home2() {
             </p>
           </Col>
           <Col md={4} className="myAvtar">
-            <Tilt>
+        
               <img style={{borderRadius: 200 }}  src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
           </Col>
         </Row>
         <Row>
