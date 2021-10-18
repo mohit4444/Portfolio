@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Resumecontent from "./ResumeContent";
-import "../../style.css";
+import "../../style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Techstack from "./Techstack";
 

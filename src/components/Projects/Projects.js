@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import "../../style.css";
+import "../../style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import nodeexecutable from "../../Assets/Projects/nodeexecutable.png";
 import portfolio from "../../Assets/Projects/portfolio.jpg";

@@ -5,7 +5,7 @@ import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/Resume";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./style.css";
+import "./style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
