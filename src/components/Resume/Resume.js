@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Resumecontent from "./ResumeContent";
-import "../../style.css";
+import "../../style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Techstack from "./Techstack";
 
@@ -19,22 +19,22 @@ function Resume() {
             <Resumecontent
               title="Front-End"
               content={[
-                "HTML, CSS, Bootstrap, JavaScript, Jquery",
+                "HTML, CSS, Bootstrap, Sass, JavaScript, Jquery",
               ]}
             />
             <Resumecontent
               date="Javascript frameworks"
               content={[
-                "React js",
-                "Vue js",
+                "React Js",
+                "Vue Js",
               ]}
             />
             <Resumecontent
               title="Back-End"
               date="Javascript frameworks"
               content={[
-                "Node js",
-                "Express js",
+                "Node Js",
+                "Express Js",
               ]}
             />
 
@@ -61,7 +61,7 @@ function Resume() {
             <Resumecontent
               title="Cross-Platform"
               content={[
-                "Apache Cordova",
+                "React Native","Apache Cordova"
               ]}
             />
           </Col>
