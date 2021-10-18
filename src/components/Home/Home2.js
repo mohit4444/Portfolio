@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/dp.jfif";
-import "../../style.scss";
+import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Home2() {

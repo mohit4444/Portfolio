@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import "../../style.scss";
+import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import expressmongo from "../../Assets/Projects/expressmongo.jpeg";

@@ -1,5 +1,5 @@
 import React from "react";
-import "../style.scss";
+import "../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 function Pre(props) {
   return <div id={props.load ? "preloader" : "preloader-none"}></div>;
