@@ -4,9 +4,6 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-import expressmongo from "../../Assets/Projects/expressmongo.jpeg";
-import expressmysql from "../../Assets/Projects/expressmysql.jpg";
 import nodeexecutable from "../../Assets/Projects/nodeexecutable.png";
 import portfolio from "../../Assets/Projects/portfolio.jpg";
 import money from "../../Assets/Projects/money.jpeg";
