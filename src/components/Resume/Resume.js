@@ -12,7 +12,7 @@ function Resume() {
     <Container fluid className="resume-section">
       <Particle />
       <Container>
-       
+
         <Row className="resume">
           <Col md={6} className="resume-left">
             <h4 className="resume-title"><strong className="purple">Web Applications</strong></h4>
@@ -44,33 +44,15 @@ function Resume() {
                 "Apache Wicket"
               ]}
             />
-            <h4 className="resume-title"><strong className="purple">Mobile Applications</strong></h4>
-            <Resumecontent
-              title="Native Android"
-              content={[
-                "Java",
-              ]}
-            />
-            <Resumecontent
-              title="Native IOS"
-              content={[
-                "Swift",
-              ]}
-            />
 
-            <Resumecontent
-              title="Cross-Platform"
-              content={[
-                "React Native","Apache Cordova"
-              ]}
-            />
-          </Col>
-          <Col md={6} className="resume-right">
-            <h4 className="resume-title"><strong className="purple">Other Skills</strong></h4>
             <Resumecontent
               title="Databases"
               content={["PostgreSQL", "MS SQL", "MongoDB"]}
             />
+          </Col>
+          <Col md={6} className="resume-right">
+            <h4 className="resume-title"><strong className="purple">Other Skills</strong></h4>
+
             <Resumecontent
               title="Microservices"
               content={["Docker"]}

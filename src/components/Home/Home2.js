@@ -15,7 +15,7 @@ function Home2() {
             </h1>
             <p className="home-about-body">
               I was introduced to computers when my older sister received a desktop from the state government's cyber age scheme for students. I immediately got hooked on computer games and started surfing the web. My desire to understand the reasoning behind computer programs and the inner workings of this system, led to my Bachelor’s degree in Information Technology.
-              To build a strong foundation in computer science i began with computer networking then i moved to the next layer of computer science i.e Software and now i'm in the process of moving to the next layer which is AI.
+              To build a strong foundation in computer science i began with computer networking then i moved to the next layer of computer science i.e Software and now i'm in the process of specialising in back-end development using node js.
               <br />
             </p>
           </Col>
