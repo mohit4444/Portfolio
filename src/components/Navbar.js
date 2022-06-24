@@ -4,9 +4,9 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import "../style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import pdf from "../Assets/Mohit Bidikar CV.pdf";
+// import pdf from "../Assets/Mohit Bidikar CV.pdf";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -67,14 +67,6 @@ function NavBar() {
                 <i className="far fa-file-alt"></i> Skills
               </Nav.Link>
             </Nav.Item>
-
-            {/* <Nav.Item className="fork-btn">
-
-              <Button className="fork-btn-inner" href={pdf} target="_blank">
-              <i className="far fa-file-alt"> CV</i>
-          </Button>
-
-            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
