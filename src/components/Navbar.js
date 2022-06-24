@@ -68,13 +68,13 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item className="fork-btn">
+            {/* <Nav.Item className="fork-btn">
 
               <Button className="fork-btn-inner" href={pdf} target="_blank">
               <i className="far fa-file-alt"> CV</i>
           </Button>
 
-            </Nav.Item>
+            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
