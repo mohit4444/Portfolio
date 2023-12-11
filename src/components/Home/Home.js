@@ -1,42 +1,66 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "../../style.css";
+import "../../style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import homeLogo from "../../Assets/home-main.svg";
-import Particle from "../Particle";
-import Home2 from "./Home2";
 import Type from "./Type";
+import Button from "react-bootstrap/Button";
+import pdf from "../../Assets/Mohit Bidikar CV.pdf";
+import GitHubCalendar from "react-github-calendar";
 
 function Home() {
   return (
-    <section>
-      <Container fluid className="home-section" id="home">
-        <Particle />
-        <Container className="home-content">
-          <Row>
-            <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There! <span className="wave">👋🏻</span>
-              </h1>
-
-              <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> Mohit Bidikar</strong>
-              </h1>
-
-              <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
-              </div>
-            </Col>
-
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img src={homeLogo} alt="home pic" className="img-fluid" />
-            </Col>
-          </Row>
-        </Container>
-      </Container>
-      <Home2 />
-    </section>
+    <Container>
+      <Row>
+        <Col md={7} className="home-header">
+          <h1>
+            Hi There! <span className="wave">👋🏻</span>
+          </h1>
+          <h1>
+            I'm <strong data-text="Mohit Bidikar">Mohit Bidikar</strong>
+          </h1>
+          <Type />
+          <br></br>
+          <Button id="cv" href={pdf} target="_blank">
+            <i className="far fa-file-alt"> CV</i>
+          </Button>
+        </Col>
+        <Col md={5}>
+          <img src={homeLogo} alt="home pic" className="img-fluid" />
+        </Col>
+      </Row>
+      <Row>
+        <Col md={12} className="center-aligned-div">
+          <h1>My journey so far</h1>
+          <p>
+            With over 4 years of experience, I specialize in developing Full
+            Stack Web Applications and Cross-Platform Mobile Applications. My
+            expertise spans a range of technologies, including Javascript
+            (React, Node, Express), Java, PostgreSQL, and MongoDB. Furthermore,
+            I recently completed my MSc in Advanced Computer Science from the
+            University of York in September 2023. This blend of formal education
+            and practical experience equips me to provide innovative and
+            efficient solutions in both web and mobile development.
+            <br />
+          </p>
+        </Col>
+      </Row>
+      <div className="github-section">
+        <br></br>
+        <Row style={{ justifyContent: "center" }}>
+          <GitHubCalendar
+            style={{ color: "white" }}
+            fontSize={22}
+            theme={{
+              light: ["black", "rebeccapurple"],
+              dark: ["black", "red"],
+            }}
+            username="mohit4444"
+          />
+        </Row>
+        <br></br>
+      </div>
+    </Container>
   );
 }
 

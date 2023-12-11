@@ -1,33 +1,37 @@
-import "./App.css";
 import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
-import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
-import Resume from "./components/Resume/Resume";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./style.css";
+import Skills from "./components/Skills/Skills";
+import { Helmet } from "react-helmet";
+import Particle from "./components/Particle";
+import "./style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [load, upadateLoad] = useState(true);
+
   useEffect(() => {
     setTimeout(() => {
       upadateLoad(false);
-    }, 1200);
+    }, 700);
   }, []);
+
   return (
-    <Router>
+    <>
+      <Helmet>
+        <title>Mohit Bidikar | Portfolio</title>
+        <meta
+          name="description"
+          content="Mohit Bidikar Portfolio created using React and deployed on Heroku"
+        />
+      </Helmet>
+      <Particle />
       <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/project" component={Projects} />
-          <Route path="/resume" component={Resume} />
-        </Switch>
-      </div>
-    </Router>
+      <Home />
+      <Projects />
+      <Skills />
+    </>
   );
 }
 
