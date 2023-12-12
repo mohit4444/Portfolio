@@ -4,9 +4,9 @@ import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 import { Helmet } from "react-helmet";
-import Particle from "./components/Particle";
 import "./style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Container } from "react-bootstrap";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -18,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <Container>
       <Helmet>
         <title>Mohit Bidikar | Portfolio</title>
         <meta
@@ -26,12 +26,12 @@ function App() {
           content="Mohit Bidikar Portfolio created using React and deployed on Heroku"
         />
       </Helmet>
-      <Particle />
       <Preloader load={load} />
+
       <Home />
       <Projects />
       <Skills />
-    </>
+    </Container>
   );
 }
 

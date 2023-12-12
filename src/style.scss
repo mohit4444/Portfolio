@@ -59,15 +59,23 @@ h2 {
 
 /*Scrollbar   */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 2px;
 }
 
+/* Track */
 ::-webkit-scrollbar-track {
-  background: var(--primary-bg-color);
+  background: black;
 }
 
+/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--accent-color);
+  background: black;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black;
   border-radius: 5px;
 }
 
@@ -138,7 +146,6 @@ h2 {
   padding-left: 25px;
   padding-right: 25px;
   height: auto;
-  background: var(--primary-bg-color);
 }
 
 .project-card-view {
@@ -154,7 +161,7 @@ h2 {
 .project-card-view:hover {
   transform: scale(1.02);
   overflow: hidden;
-  border: 2px solid var(--accent-color) !important;
+ 
 }
 
 .project-title {
@@ -316,10 +323,6 @@ h2 {
     margin-top: 25px;
   }
 
-  .github-section {
-    display: none;
-  }
-
 }
 
 /* Adjusting style for tablets */
@@ -343,7 +346,4 @@ h2 {
     margin-top: 25px;
   }
 
-  .github-section {
-    display: none;
-  }
 }

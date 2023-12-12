@@ -45,21 +45,19 @@ function Home() {
           </p>
         </Col>
       </Row>
-      <div className="github-section">
-        <br></br>
-        <Row style={{ justifyContent: "center" }}>
-          <GitHubCalendar
-            style={{ color: "white" }}
-            fontSize={22}
-            theme={{
-              light: ["black", "rebeccapurple"],
-              dark: ["black", "red"],
-            }}
-            username="mohit4444"
-          />
-        </Row>
-        <br></br>
-      </div>
+      <br></br>
+      <Row style={{ justifyContent: "center" }}>
+        <GitHubCalendar
+          style={{ color: "white" }}
+          fontSize={22}
+          theme={{
+            light: ["black", "rebeccapurple"],
+            dark: ["black", "red"],
+          }}
+          username="mohit4444"
+        />
+      </Row>
+      <br></br>
     </Container>
   );
 }
