@@ -132,16 +132,13 @@ function Projects() {
                 />
               </center>
               <Card.Body>
-                <b>
-                  <u>OpenAI API and Hosted on AWS (EC2 instance)</u>
-                </b>
-                <br />
                 <Card.Text style={{ textAlign: "justify" }}>
                   <ul>
                     <li>
                       Chat with ChatGPT on WhatsApp and use it as your personal
                       assistant.
                     </li>
+                    <li>OpenAI API and Hosted on AWS (EC2 instance)</li>
                   </ul>
                 </Card.Text>
                 <Button
@@ -169,17 +166,12 @@ function Projects() {
                 />
               </center>
               <Card.Body>
-                <b>
-                  <u>React, Sass, and hosted on Netlify with CI/CD</u>
-                </b>
-                <br />
                 <Card.Text style={{ textAlign: "justify" }}>
                   <ul>
-                    <li>The portfolio you are currently viewing.</li>
                     <li>
-                      Particle JS used as the background to mimic
-                      constellations.
+                      The portfolio you are currently viewing with a synth theme
                     </li>
+                    <li>React, Sass, and hosted on Netlify with CI/CD</li>
                   </ul>
                 </Card.Text>
                 <Button

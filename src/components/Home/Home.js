@@ -49,7 +49,7 @@ function Home() {
       <Row style={{ justifyContent: "center" }}>
         <GitHubCalendar
           style={{ color: "white" }}
-          fontSize={22}
+          fontSize={20}
           theme={{
             light: ["black", "rebeccapurple"],
             dark: ["black", "red"],
