@@ -39,19 +39,12 @@ function Projects() {
               </center>
               <Card.Body>
                 <Card.Text style={{ textAlign: "justify" }}>
-                  <ul>
-                    <li>
-                      Used tensorflow for the neural network and p5.js to create
-                      the simulation
-                    </li>
-                    <li>
-                      Developed an autonomous navigation system for boats in
-                      narrow water channels, addressing a gap in marine
-                      navigation automation. The project combines neural
-                      networks and genetic algorithms to improve safety,
-                      reliability, and efficiency in waterway transportation.
-                    </li>
-                  </ul>
+                  In this project, I developed an autonomous boat navigation
+                  system for narrow water channels using TensorFlow and p5.js.
+                  The system, which combines neural networks with genetic
+                  algorithms, improves safety, reliability, and efficiency in
+                  marine navigation, providing a practical solution for
+                  challenging marine environments.
                 </Card.Text>
                 <Button
                   style={{ marginRight: "10px", marginBottom: "10px" }}
@@ -89,23 +82,12 @@ function Projects() {
               </center>
               <Card.Body>
                 <Card.Text style={{ textAlign: "justify" }}>
-                  <ul>
-                    <li>
-                      Progressive web app (PWA) that can be used on mobile as
-                      well as desktop.
-                    </li>
-                    <li>
-                      React, Express, MongoDB, and hosted on Render with CI/CD
-                    </li>
-                    <li>
-                      Allows you to track your daily expenses as well as the
-                      monthly total.
-                    </li>
-                    <li>
-                      Integrated a calendar so that the expenses for each day
-                      can be tracked.
-                    </li>
-                  </ul>
+                  The application is a Progressive Web App (PWA) designed for
+                  both mobile and desktop platforms, developed using React,
+                  Express, and MongoDB. It is hosted on Render with CI/CD
+                  practices. The app's primary function is to facilitate the
+                  tracking of daily expenses, as well as providing a monthly
+                  total.
                 </Card.Text>
                 <Button
                   href="https://expense-tracker-a4oj.onrender.com/"
@@ -133,13 +115,9 @@ function Projects() {
               </center>
               <Card.Body>
                 <Card.Text style={{ textAlign: "justify" }}>
-                  <ul>
-                    <li>
-                      Chat with ChatGPT on WhatsApp and use it as your personal
-                      assistant.
-                    </li>
-                    <li>OpenAI API and Hosted on AWS (EC2 instance)</li>
-                  </ul>
+                  Chat with ChatGPT on WhatsApp for a personal assistant
+                  experience, powered by OpenAI's API and hosted on an AWS EC2
+                  instance for seamless interaction.
                 </Card.Text>
                 <Button
                   href="https://github.com/mohit4444/WhatsappAI"
@@ -167,12 +145,8 @@ function Projects() {
               </center>
               <Card.Body>
                 <Card.Text style={{ textAlign: "justify" }}>
-                  <ul>
-                    <li>
-                      The portfolio you are currently viewing with a synth theme
-                    </li>
-                    <li>React, Sass, and hosted on Netlify with CI/CD</li>
-                  </ul>
+                  This portfolio, showcasing a synth theme, is built with React
+                  and Sass, and hosted on Netlify with CI/CD
                 </Card.Text>
                 <Button
                   href="https://github.com/mohit4444/Portfolio"
