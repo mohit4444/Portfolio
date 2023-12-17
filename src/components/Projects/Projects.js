@@ -9,6 +9,7 @@ import genetic from "../../Assets/Projects/genetic.mp4";
 import Card from "react-bootstrap/Card";
 import pdf from "../../Assets/Report.pdf";
 import Button from "react-bootstrap/Button";
+import Devops from "../../Assets/Projects/Devops.jpeg";
 
 function Projects() {
   return (
@@ -56,6 +57,37 @@ function Projects() {
                 <Button
                   style={{ marginBottom: "10px" }}
                   href="https://github.com/mohit4444/Autonomous-navigation-system-through-confined-waters"
+                  target="_blank"
+                >
+                  <i className="fab fa-github"> Source code</i>
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={8} className="project-card">
+            <Card className="project-card-view">
+              <Card.Title>
+                <div className="project-title">
+                  <h4>
+                    MERN Deployment Toolkit with Docker, GitHub Actions and AWS
+                    Beanstalk
+                  </h4>
+                </div>
+              </Card.Title>
+              <center>
+                <img src={Devops} alt="devops" className="project-video"></img>
+              </center>
+              <Card.Body>
+                <Card.Text style={{ textAlign: "justify" }}>
+                  This repository serves as a specialized toolkit designed for
+                  the deployment of MERN (MongoDB, Express.js, React, Node.js)
+                  applications. It utilizes Docker, GitHub Actions, and AWS
+                  Elastic Beanstalk to streamline the process of development and
+                  cloud deployment.
+                </Card.Text>
+                <Button
+                  style={{ marginBottom: "10px" }}
+                  href="https://github.com/mohit4444/MERN-Deployment-Toolkit-Docker-GitHub-Actions-and-AWS-Beanstalk"
                   target="_blank"
                 >
                   <i className="fab fa-github"> Source code</i>
