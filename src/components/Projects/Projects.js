@@ -75,7 +75,7 @@ function Projects() {
                 </div>
               </Card.Title>
               <center>
-                <img src={Devops} alt="devops" className="project-video"></img>
+                <img src={Devops} alt="devops" className="project-img"></img>
               </center>
               <Card.Body>
                 <Card.Text style={{ textAlign: "justify" }}>
