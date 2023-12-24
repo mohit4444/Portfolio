@@ -6,6 +6,7 @@ import portfolio from "../../Assets/Projects/portfolio.mp4";
 import exptrack from "../../Assets/Projects/exptrack.mp4";
 import whatsapp from "../../Assets/Projects/whatsapp.mp4";
 import genetic from "../../Assets/Projects/genetic.mp4";
+import spacex from "../../Assets/Projects/spacex.mp4";
 import Card from "react-bootstrap/Card";
 import pdf from "../../Assets/Report.pdf";
 import Button from "react-bootstrap/Button";
@@ -126,6 +127,47 @@ function Projects() {
                   target="_blank"
                 >
                   <i className="fas fa-mobile-alt"> View App</i>
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={8} className="project-card">
+            <Card className="project-card-view">
+              <Card.Title>
+                <div className="project-title">
+                  <h4>SpaceX Launch Tracker</h4>
+                </div>
+              </Card.Title>
+              <center>
+                <video
+                  className="space-project-video"
+                  variant="top"
+                  src={spacex}
+                  controls
+                  autoPlay
+                  muted
+                />
+              </center>
+              <Card.Body>
+                <Card.Text style={{ textAlign: "justify" }}>
+                  An interactive web application developed using React and
+                  SpaceX API. It seamlessly presents information on both past
+                  and upcoming SpaceX launches.
+                </Card.Text>
+
+                <Button
+                  style={{ marginRight: "10px", marginBottom: "10px" }}
+                  href="https://spacex-launch-tracker-mohit.vercel.app/"
+                  target="_blank"
+                >
+                  <i className="fas fa-mobile-alt"> View App</i>
+                </Button>
+                <Button
+                  style={{ marginBottom: "10px" }}
+                  href="https://github.com/mohit4444/SpaceX-Launch-Tracker"
+                  target="_blank"
+                >
+                  <i className="fab fa-github"> Source code</i>
                 </Button>
               </Card.Body>
             </Card>

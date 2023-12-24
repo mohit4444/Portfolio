@@ -194,9 +194,12 @@ h2 {
 .project-video {
   height: auto;
   width: "100%";
-  border-bottom: 4px solid var(--secondary-bg-color);
 }
 
+.space-project-video {
+  height: auto;
+  width: 500px;
+}
 
 /* Skills */
 
@@ -317,6 +320,11 @@ h2 {
 
   .project-video {
     height: 350px;
+  }
+
+  .space-project-video {
+    height: 350px;
+    width: 310px;
   }
 
   .project-img {
