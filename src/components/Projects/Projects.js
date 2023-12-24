@@ -140,7 +140,7 @@ function Projects() {
               </Card.Title>
               <center>
                 <video
-                  className="space-project-video"
+                  className="project-video"
                   variant="top"
                   src={spacex}
                   controls
