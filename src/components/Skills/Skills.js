@@ -17,8 +17,8 @@ function Skills() {
           <SkillsContent
             title="Front-End"
             content={[
-              "HTML, CSS, Bootstrap, Sass, JavaScript, Jquery",
-              "React (redux, socket.i.o, apollo, storybook)",
+              "HTML, CSS, Bootstrap, Sass, JavaScript, TypeScript",
+              "React (redux, socket.i.o, apollo, storybook, styled components)",
             ]}
           />
           <SkillsContent
@@ -49,18 +49,16 @@ function Skills() {
 
           <SkillsContent
             title="Project management"
-            content={["Jira, Github"]}
+            content={["Jira", "Github Issues"]}
           />
+
           <SkillsContent
-            title="Computer networking"
-            content={[
-              "Configuring routers",
-              "Configuring switches",
-              "Hardware troubleshooting",
-            ]}
+            title="CI/CD"
+            content={["Jenkins", "Github Actions"]}
           />
+
           <SkillsContent
-            title="Hosting"
+            title="Cloud"
             content={["Netlify", "Heroku", "Render", "AWS"]}
           />
         </Col>
@@ -74,16 +72,20 @@ function Skills() {
         <Techstack iconName="devicon-mongodb-plain-wordmark" />
         <Techstack iconName="cib-graphql" />
         <Techstack iconName="cib-redux" />
+        <Techstack iconName="devicon-selenium-original" />
         <Techstack iconName="devicon-git-plain-wordmark" />
         <Techstack iconName="devicon-bootstrap-plain-wordmark" />
         <Techstack iconName="cib-postgresql" />
         <Techstack iconName="cib-docker" />
         <Techstack iconName="cib-java" />
-        <Techstack iconName="cib-python" />
+        <Techstack iconName="devicon-amazonwebservices-plain-wordmark" />
+        <Techstack iconName="devicon-nginx-original" />
+        <Techstack iconName="devicon-sass-original" />
+        <Techstack iconName="devicon-tensorflow-original" />
+        <Techstack iconName="devicon-typescript-plain" />
       </Row>
       <Row>
         <Col md={12} className="center-aligned-div">
-          <h1>Find me on</h1>
           <p>Feel free to connect with me</p>
           <ul className="social-links">
             <li className="social-icons">

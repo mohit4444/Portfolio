@@ -205,26 +205,26 @@ h2 {
 
 .social-links {
   padding-inline-start: 0;
+  margin-bottom: 50px;
 }
 
 .social-icons {
   display: inline-block;
-  padding-right: 15px;
-  padding-left: 15px;
+  margin: 10px;
 }
 
 .home-social-icons {
   position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
+  padding: 5px;
+  width: 60px;
+  height: 60px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2.5em;
   line-height: 43px;
   background: var(--text-color);
-  border-radius: 50%;
+  border-radius: 10px;
   transition: 0.5s;
-  color: var(--secondary-bg-color);
+  color: var(--primary-bg-color);
 }
 
 .home-social-icons:hover {
