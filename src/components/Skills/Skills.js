@@ -18,7 +18,7 @@ function Skills() {
             title="Front-End"
             content={[
               "HTML, CSS, Bootstrap, Sass, JavaScript, TypeScript",
-              "React (redux, socket.i.o, apollo, storybook, styled components)",
+              "React (redux toolkit, socket.i.o, apollo, storybook, styled components)",
             ]}
           />
           <SkillsContent
