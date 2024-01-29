@@ -38,7 +38,7 @@ function Home() {
             expertise spans a range of technologies, including Javascript
             (React, Node, Express), Java, PostgreSQL, and MongoDB. Furthermore,
             I recently completed my MSc in Advanced Computer Science from the
-            University of York in September 2023. This blend of formal education
+            University of York in November 2023. This blend of formal education
             and practical experience equips me to provide innovative and
             efficient solutions in both web and mobile development.
             <br />
