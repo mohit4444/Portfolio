@@ -122,12 +122,12 @@ function Projects() {
                   tracking of daily expenses, as well as providing a monthly
                   total.
                 </Card.Text>
-                <Button
+                {/* <Button
                   href="https://expense-tracker-a4oj.onrender.com/"
                   target="_blank"
                 >
                   <i className="fas fa-mobile-alt"> View App</i>
-                </Button>
+                </Button> */}
               </Card.Body>
             </Card>
           </Col>
