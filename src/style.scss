@@ -7,8 +7,8 @@
   --tertiary-bg-color: #6d20c5d7;
   --text-color: white;
   --accent-color: red;
-  --font-primary: 'Varela Round', sans-serif;
-  --font-secondary: 'Raleway', sans-serif;
+  --font-primary: "Varela Round", sans-serif;
+  --font-secondary: "Raleway", sans-serif;
 }
 
 html {
@@ -20,7 +20,11 @@ body {
   font-family: var(--font-primary) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, var(--primary-bg-color), var(--primary-bg-color));
+  background-image: linear-gradient(
+    to left,
+    var(--primary-bg-color),
+    var(--primary-bg-color)
+  );
 }
 
 p {
@@ -56,7 +60,6 @@ h2 {
   background-position: center;
 }
 
-
 /*Scrollbar   */
 ::-webkit-scrollbar {
   width: 2px;
@@ -78,7 +81,6 @@ h2 {
   background: black;
   border-radius: 5px;
 }
-
 
 /* Home section */
 .wave {
@@ -137,7 +139,6 @@ h2 {
   color: var(--accent-color);
 }
 
-
 /* Projects */
 
 .project-card {
@@ -155,13 +156,12 @@ h2 {
   transition: all 0.5s ease 0s;
   height: 100%;
   text-align: center;
-  border: 2px solid  var(--primary-bg-color) !important;
+  border: 2px solid var(--primary-bg-color) !important;
 }
 
 .project-card-view:hover {
   transform: scale(1.02);
   overflow: hidden;
- 
 }
 
 .project-title {
@@ -175,7 +175,7 @@ h2 {
   color: var(--text-color);
   font-size: 25px;
   background-color: var(--secondary-bg-color) !important;
-  border-color: var(--secondary-bg-color)!important;
+  border-color: var(--secondary-bg-color) !important;
 }
 
 .btn-primary:hover {
@@ -261,7 +261,7 @@ h2 {
 
 .resume .resume-item ul {
   padding-left: 20px;
-  text-align: justify;
+  text-align: left;
 }
 
 .resume .resume-item ul li {
@@ -282,14 +282,13 @@ h2 {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: var(--text-color); 
+  background: var(--text-color);
   border: 2px solid var(--secondary-bg-color);
 }
 
 /* Adjusting style for mobiles */
 
 @media (max-width: 767px) {
-
   html {
     font-size: medium;
   }
@@ -324,13 +323,11 @@ h2 {
   #cv {
     margin-top: 25px;
   }
-
 }
 
 /* Adjusting style for tablets */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
   .Typewriter__wrapper {
     font-size: 1.5em;
     position: absolute;
@@ -351,5 +348,4 @@ h2 {
   #cv {
     margin-top: 25px;
   }
-
 }
