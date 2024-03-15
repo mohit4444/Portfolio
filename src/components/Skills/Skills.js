@@ -7,24 +7,27 @@ import Slider from "react-slick";
 import javascript2 from "../../Assets/Certifications/javascript2.jpg";
 import frontend from "../../Assets/Certifications/frontend.jpg";
 import sql2 from "../../Assets/Certifications/sql2.jpg";
+import node from "../../Assets/Certifications/node.jpg";
+import react from "../../Assets/Certifications/react.jpg";
+import javascript from "../../Assets/Certifications/javascript.jpg";
 
 function Skills() {
   var settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Default for desktops and larger devices
-    slidesToScroll: 3, // Default for desktops and larger devices
+    slidesToShow: 3,
+    slidesToScroll: 3,
     responsive: [
       {
-        breakpoint: 1024, // Tablets and below
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
         },
       },
       {
-        breakpoint: 768, // Phones and below
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -97,35 +100,93 @@ function Skills() {
           <Slider {...settings}>
             <div>
               <center>
-                <img
-                  className="slideimg"
-                  src={javascript2}
-                  alt="certification"
-                ></img>
+                <a
+                  href="https://www.hackerrank.com/certificates/aa0a8d75ae5a"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="slideimg"
+                    src={javascript2}
+                    alt="certification"
+                  ></img>
+                </a>
               </center>
             </div>
             <div>
               <center>
-                <img
-                  className="slideimg"
-                  src={frontend}
-                  alt="certification"
-                ></img>
+                <a
+                  href="https://www.hackerrank.com/certificates/7bd7a2e87bae"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="slideimg"
+                    src={frontend}
+                    alt="certification"
+                  ></img>
+                </a>
               </center>
             </div>
             <div>
               <center>
-                <img className="slideimg" src={sql2} alt="certification"></img>
+                <a
+                  href="https://www.hackerrank.com/certificates/3b5fbf6357fa"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="slideimg"
+                    src={sql2}
+                    alt="certification"
+                  ></img>
+                </a>
               </center>
             </div>
             <div>
-              <h3>4</h3>
+              <center>
+                <a
+                  href="https://www.hackerrank.com/certificates/b78da0ea5bf6"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="slideimg"
+                    src={node}
+                    alt="certification"
+                  ></img>
+                </a>
+              </center>
             </div>
             <div>
-              <h3>5</h3>
+              <center>
+                <a
+                  href="https://www.hackerrank.com/certificates/0eac8ec01b1c"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="slideimg"
+                    src={react}
+                    alt="certification"
+                  ></img>
+                </a>
+              </center>
             </div>
             <div>
-              <h3>6</h3>
+              <center>
+                <a
+                  href="https://www.hackerrank.com/certificates/8ecb8b05c580"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="slideimg"
+                    src={javascript}
+                    alt="certification"
+                  ></img>
+                </a>
+              </center>
             </div>
           </Slider>
         </Col>
