@@ -45,7 +45,6 @@ function Home() {
           </p>
         </Col>
       </Row>
-      <br></br>
       <Row style={{ justifyContent: "center" }}>
         <GitHubCalendar
           style={{ color: "white" }}
@@ -57,7 +56,6 @@ function Home() {
           username="mohit4444"
         />
       </Row>
-      <br></br>
     </Container>
   );
 }
