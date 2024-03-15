@@ -20,11 +20,11 @@ const projectDetails = [
     description:
       "An autonomous boat navigation system for narrow water channels using TensorFlow and p5.js, combining neural networks with genetic algorithms for improved safety and efficiency in marine navigation.",
     buttons: [
-      { href: pdf, text: "Research paper", icon: "fa-file-alt" },
+      { href: pdf, text: "Research paper", icon: "far fa-file-alt" },
       {
         href: "https://github.com/mohit4444/Autonomous-navigation-system-through-confined-waters",
         text: "Source code",
-        icon: "fa-github",
+        icon: "fab fa-github",
       },
     ],
   },
@@ -38,7 +38,7 @@ const projectDetails = [
       {
         href: "https://github.com/mohit4444/MERN-Deployment-Toolkit-Docker-GitHub-Actions-and-AWS-Beanstalk",
         text: "Source code",
-        icon: "fa-github",
+        icon: "fab fa-github",
       },
     ],
   },
@@ -59,12 +59,12 @@ const projectDetails = [
       {
         href: "https://spacex-launch-tracker-mohit.vercel.app/",
         text: "View App",
-        icon: "fas fa-rocket",
+        icon: "fas fa-mobile-alt",
       },
       {
         href: "https://github.com/mohit4444/SpaceX-Launch-Tracker",
         text: "Source code",
-        icon: "fa-github",
+        icon: "fab fa-github",
       },
     ],
   },
@@ -78,7 +78,7 @@ const projectDetails = [
       {
         href: "https://github.com/mohit4444/WhatsappAI",
         text: "Source code",
-        icon: "fa-github",
+        icon: "fab fa-github",
       },
     ],
   },
@@ -92,7 +92,7 @@ const projectDetails = [
       {
         href: "https://github.com/mohit4444/Portfolio",
         text: "Source code",
-        icon: "fa-github",
+        icon: "fab fa-github",
       },
     ],
   },
@@ -111,8 +111,8 @@ function Projects() {
           {projectDetails.map((project, index) => (
             <Col md={8} key={index} className="project-card">
               <Card className="project-card-view">
-                <Card.Title className="project-title">
-                  <h4>{project.title}</h4>
+                <Card.Title>
+                  <label className="project-title">{project.title}</label>
                 </Card.Title>
                 <center>
                   {project.type === "video" ? (
@@ -143,7 +143,7 @@ function Projects() {
                         target="_blank"
                         className="mr-2 mb-2"
                       >
-                        <i className={`fa ${button.icon}`}></i> {button.text}
+                        <i className={`${button.icon}`}></i> {button.text}
                       </Button>
                     ))}
                 </Card.Body>
