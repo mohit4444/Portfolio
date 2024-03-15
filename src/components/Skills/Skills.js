@@ -36,6 +36,33 @@ function Skills() {
     ],
   };
 
+  let certifications = [
+    {
+      path: javascript2,
+      link: "https://www.hackerrank.com/certificates/aa0a8d75ae5a",
+    },
+    {
+      path: frontend,
+      link: "https://www.hackerrank.com/certificates/7bd7a2e87bae",
+    },
+    {
+      path: sql2,
+      link: "https://www.hackerrank.com/certificates/3b5fbf6357fa",
+    },
+    {
+      path: node,
+      link: "https://www.hackerrank.com/certificates/b78da0ea5bf6",
+    },
+    {
+      path: react,
+      link: "https://www.hackerrank.com/certificates/0eac8ec01b1c",
+    },
+    {
+      path: javascript,
+      link: "https://www.hackerrank.com/certificates/8ecb8b05c580",
+    },
+  ];
+
   return (
     <Container>
       <Row>
@@ -98,96 +125,19 @@ function Skills() {
             <h5 className="resume-title">Certifications</h5>
           </center>
           <Slider {...settings}>
-            <div>
-              <center>
-                <a
-                  href="https://www.hackerrank.com/certificates/aa0a8d75ae5a"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    className="slideimg"
-                    src={javascript2}
-                    alt="certification"
-                  ></img>
-                </a>
-              </center>
-            </div>
-            <div>
-              <center>
-                <a
-                  href="https://www.hackerrank.com/certificates/7bd7a2e87bae"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    className="slideimg"
-                    src={frontend}
-                    alt="certification"
-                  ></img>
-                </a>
-              </center>
-            </div>
-            <div>
-              <center>
-                <a
-                  href="https://www.hackerrank.com/certificates/3b5fbf6357fa"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    className="slideimg"
-                    src={sql2}
-                    alt="certification"
-                  ></img>
-                </a>
-              </center>
-            </div>
-            <div>
-              <center>
-                <a
-                  href="https://www.hackerrank.com/certificates/b78da0ea5bf6"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    className="slideimg"
-                    src={node}
-                    alt="certification"
-                  ></img>
-                </a>
-              </center>
-            </div>
-            <div>
-              <center>
-                <a
-                  href="https://www.hackerrank.com/certificates/0eac8ec01b1c"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    className="slideimg"
-                    src={react}
-                    alt="certification"
-                  ></img>
-                </a>
-              </center>
-            </div>
-            <div>
-              <center>
-                <a
-                  href="https://www.hackerrank.com/certificates/8ecb8b05c580"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    className="slideimg"
-                    src={javascript}
-                    alt="certification"
-                  ></img>
-                </a>
-              </center>
-            </div>
+            {certifications.map((cert, index) => (
+              <div key={index}>
+                <center>
+                  <a href={cert.link} target="_blank" rel="noreferrer">
+                    <img
+                      className="slideimg"
+                      src={cert.path}
+                      alt="certification"
+                    ></img>
+                  </a>
+                </center>
+              </div>
+            ))}
           </Slider>
         </Col>
       </Row>
