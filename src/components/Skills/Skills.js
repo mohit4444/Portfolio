@@ -3,8 +3,36 @@ import SkillsContent from "./SkillsContent";
 import "../../style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Techstack from "./Techstack";
+import Slider from "react-slick";
+import javascript2 from "../../Assets/Certifications/javascript2.jpg";
+import frontend from "../../Assets/Certifications/frontend.jpg";
+import sql2 from "../../Assets/Certifications/sql2.jpg";
 
 function Skills() {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3, // Default for desktops and larger devices
+    slidesToScroll: 3, // Default for desktops and larger devices
+    responsive: [
+      {
+        breakpoint: 1024, // Tablets and below
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 768, // Phones and below
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <Container>
       <Row>
@@ -61,6 +89,45 @@ function Skills() {
             title="Cloud"
             content={["Netlify", "Heroku", "Render", "AWS"]}
           />
+        </Col>
+        <Col md={12}>
+          <center>
+            <h5 className="resume-title">Certifications</h5>
+          </center>
+          <Slider {...settings}>
+            <div>
+              <center>
+                <img
+                  className="slideimg"
+                  src={javascript2}
+                  alt="certification"
+                ></img>
+              </center>
+            </div>
+            <div>
+              <center>
+                <img
+                  className="slideimg"
+                  src={frontend}
+                  alt="certification"
+                ></img>
+              </center>
+            </div>
+            <div>
+              <center>
+                <img className="slideimg" src={sql2} alt="certification"></img>
+              </center>
+            </div>
+            <div>
+              <h3>4</h3>
+            </div>
+            <div>
+              <h3>5</h3>
+            </div>
+            <div>
+              <h3>6</h3>
+            </div>
+          </Slider>
         </Col>
       </Row>
 

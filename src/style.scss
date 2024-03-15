@@ -252,7 +252,7 @@ h2 {
   position: relative;
 }
 
-.resume .resume-item .resume-title {
+.resume-title {
   padding: 4px 11px;
   display: inline-block;
   margin-bottom: 30px;
@@ -286,6 +286,15 @@ h2 {
   border: 2px solid var(--secondary-bg-color);
 }
 
+.slideimg {
+  transition: all 0.5s ease 0s;
+  height: 250px;
+}
+
+.slideimg:hover {
+  transform: scale(1.04);
+  overflow: hidden;
+}
 /* Adjusting style for mobiles */
 
 @media (max-width: 767px) {
