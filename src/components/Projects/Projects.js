@@ -12,6 +12,92 @@ import pdf from "../../Assets/Report.pdf";
 import Button from "react-bootstrap/Button";
 import Devops from "../../Assets/Projects/Devops.jpeg";
 
+const projectDetails = [
+  {
+    title: "AI navigation system",
+    type: "video",
+    src: genetic,
+    description:
+      "An autonomous boat navigation system for narrow water channels using TensorFlow and p5.js, combining neural networks with genetic algorithms for improved safety and efficiency in marine navigation.",
+    buttons: [
+      { href: pdf, text: "Research paper", icon: "fa-file-alt" },
+      {
+        href: "https://github.com/mohit4444/Autonomous-navigation-system-through-confined-waters",
+        text: "Source code",
+        icon: "fa-github",
+      },
+    ],
+  },
+  {
+    title: "MERN Deployment Toolkit",
+    type: "image",
+    src: Devops,
+    description:
+      "A toolkit for deploying MERN stack applications using Docker, GitHub Actions, and AWS Elastic Beanstalk, designed to streamline the development and deployment process.",
+    buttons: [
+      {
+        href: "https://github.com/mohit4444/MERN-Deployment-Toolkit-Docker-GitHub-Actions-and-AWS-Beanstalk",
+        text: "Source code",
+        icon: "fa-github",
+      },
+    ],
+  },
+  {
+    title: "Expense Tracker",
+    type: "video",
+    src: exptrack,
+    description:
+      "A Progressive Web App (PWA) for tracking daily expenses, developed using React, Express, and MongoDB, with features for mobile and desktop platforms.",
+  },
+  {
+    title: "SpaceX Launch Tracker",
+    type: "video",
+    src: spacex,
+    description:
+      "Interactive web application using React and SpaceX API to present information on SpaceX launches, including past and upcoming missions.",
+    buttons: [
+      {
+        href: "https://spacex-launch-tracker-mohit.vercel.app/",
+        text: "View App",
+        icon: "fas fa-rocket",
+      },
+      {
+        href: "https://github.com/mohit4444/SpaceX-Launch-Tracker",
+        text: "Source code",
+        icon: "fa-github",
+      },
+    ],
+  },
+  {
+    title: "WhatsApp AI Chatbot",
+    type: "video",
+    src: whatsapp,
+    description:
+      "ChatGPT integrated WhatsApp chatbot for a personal assistant experience, powered by OpenAI's API and hosted on an AWS EC2 instance.",
+    buttons: [
+      {
+        href: "https://github.com/mohit4444/WhatsappAI",
+        text: "Source code",
+        icon: "fa-github",
+      },
+    ],
+  },
+  {
+    title: "Portfolio Website",
+    type: "video",
+    src: portfolio,
+    description:
+      "A personal portfolio website showcasing a synth theme, built with React and Sass, and deployed on Netlify with CI/CD.",
+    buttons: [
+      {
+        href: "https://github.com/mohit4444/Portfolio",
+        text: "Source code",
+        icon: "fa-github",
+      },
+    ],
+  },
+];
+
 function Projects() {
   return (
     <Container>
@@ -22,215 +108,48 @@ function Projects() {
       </Row>
       <Row>
         <center>
-          <Col md={8} className="project-card">
-            <Card className="project-card-view">
-              <Card.Title>
-                <div className="project-title">
-                  <h4>AI navigation system</h4>
-                </div>
-              </Card.Title>
-              <center>
-                <video
-                  className="project-video"
-                  variant="top"
-                  src={genetic}
-                  controls
-                  autoPlay
-                  muted
-                />
-              </center>
-              <Card.Body>
-                <Card.Text style={{ textAlign: "justify" }}>
-                  In this project, I developed an autonomous boat navigation
-                  system for narrow water channels using TensorFlow and p5.js.
-                  The system, which combines neural networks with genetic
-                  algorithms, improves safety, reliability, and efficiency in
-                  marine navigation, providing a practical solution for
-                  challenging marine environments.
-                </Card.Text>
-                <Button
-                  style={{ marginRight: "10px", marginBottom: "10px" }}
-                  href={pdf}
-                  target="_blank"
-                >
-                  <i className="far fa-file-alt"> Research paper</i>
-                </Button>
-                <Button
-                  style={{ marginBottom: "10px" }}
-                  href="https://github.com/mohit4444/Autonomous-navigation-system-through-confined-waters"
-                  target="_blank"
-                >
-                  <i className="fab fa-github"> Source code</i>
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={8} className="project-card">
-            <Card className="project-card-view">
-              <Card.Title>
-                <div className="project-title">
-                  <h4>
-                    MERN Deployment Toolkit with Docker, GitHub Actions and AWS
-                    Beanstalk
-                  </h4>
-                </div>
-              </Card.Title>
-              <center>
-                <img src={Devops} alt="devops" className="project-img"></img>
-              </center>
-              <Card.Body>
-                <Card.Text style={{ textAlign: "justify" }}>
-                  This repository serves as a specialized toolkit designed for
-                  the deployment of MERN (MongoDB, Express.js, React, Node.js)
-                  applications. It utilizes Docker, GitHub Actions, and AWS
-                  Elastic Beanstalk to streamline the process of development and
-                  cloud deployment.
-                </Card.Text>
-                <Button
-                  style={{ marginBottom: "10px" }}
-                  href="https://github.com/mohit4444/MERN-Deployment-Toolkit-Docker-GitHub-Actions-and-AWS-Beanstalk"
-                  target="_blank"
-                >
-                  <i className="fab fa-github"> Source code</i>
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={8} className="project-card">
-            <Card className="project-card-view">
-              <Card.Title>
-                <div className="project-title">
-                  <h4>Expense Tracker</h4>
-                </div>
-              </Card.Title>
-              <center>
-                <video
-                  className="project-video"
-                  variant="top"
-                  src={exptrack}
-                  controls
-                  autoPlay
-                  muted
-                />
-              </center>
-              <Card.Body>
-                <Card.Text style={{ textAlign: "justify" }}>
-                  The application is a Progressive Web App (PWA) designed for
-                  both mobile and desktop platforms, developed using React,
-                  Express, and MongoDB. It is hosted on Render with CI/CD
-                  practices. The app's primary function is to facilitate the
-                  tracking of daily expenses, as well as providing a monthly
-                  total.
-                </Card.Text>
-                {/* <Button
-                  href="https://expense-tracker-a4oj.onrender.com/"
-                  target="_blank"
-                >
-                  <i className="fas fa-mobile-alt"> View App</i>
-                </Button> */}
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={8} className="project-card">
-            <Card className="project-card-view">
-              <Card.Title>
-                <div className="project-title">
-                  <h4>SpaceX Launch Tracker</h4>
-                </div>
-              </Card.Title>
-              <center>
-                <video
-                  className="project-video"
-                  variant="top"
-                  src={spacex}
-                  controls
-                  autoPlay
-                  muted
-                />
-              </center>
-              <Card.Body>
-                <Card.Text style={{ textAlign: "justify" }}>
-                  An interactive web application developed using React and
-                  SpaceX API. It seamlessly presents information on both past
-                  and upcoming SpaceX launches.
-                </Card.Text>
-
-                <Button
-                  style={{ marginRight: "10px", marginBottom: "10px" }}
-                  href="https://spacex-launch-tracker-mohit.vercel.app/"
-                  target="_blank"
-                >
-                  <i className="fas fa-mobile-alt"> View App</i>
-                </Button>
-                <Button
-                  style={{ marginBottom: "10px" }}
-                  href="https://github.com/mohit4444/SpaceX-Launch-Tracker"
-                  target="_blank"
-                >
-                  <i className="fab fa-github"> Source code</i>
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={8} className="project-card">
-            <Card className="project-card-view">
-              <Card.Title>
-                <div className="project-title">Whatsapp AI chatbot</div>
-              </Card.Title>
-              <center>
-                <video
-                  className="project-video"
-                  variant="top"
-                  src={whatsapp}
-                  controls
-                  autoPlay
-                  muted
-                />
-              </center>
-              <Card.Body>
-                <Card.Text style={{ textAlign: "justify" }}>
-                  Chat with ChatGPT on WhatsApp for a personal assistant
-                  experience, powered by OpenAI's API and hosted on an AWS EC2
-                  instance for seamless interaction.
-                </Card.Text>
-                <Button
-                  href="https://github.com/mohit4444/WhatsappAI"
-                  target="_blank"
-                >
-                  <i className="fab fa-github"> Source code</i>
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={8} className="project-card">
-            <Card className="project-card-view">
-              <Card.Title>
-                <div className="project-title">Portfolio</div>
-              </Card.Title>
-              <center>
-                <video
-                  className="project-video"
-                  variant="top"
-                  src={portfolio}
-                  controls
-                  autoPlay
-                  muted
-                />
-              </center>
-              <Card.Body>
-                <Card.Text style={{ textAlign: "justify" }}>
-                  This portfolio, showcasing a synth theme, is built with React
-                  and Sass, and hosted on Netlify with CI/CD
-                </Card.Text>
-                <Button
-                  href="https://github.com/mohit4444/Portfolio"
-                  target="_blank"
-                >
-                  <i className="fab fa-github"> Source code</i>
-                </Button>
-              </Card.Body>
-            </Card>
-          </Col>
+          {projectDetails.map((project, index) => (
+            <Col md={8} key={index} className="project-card">
+              <Card className="project-card-view">
+                <Card.Title className="project-title">
+                  <h4>{project.title}</h4>
+                </Card.Title>
+                <center>
+                  {project.type === "video" ? (
+                    <video
+                      className="project-video"
+                      src={project.src}
+                      controls
+                      autoPlay
+                      muted
+                    />
+                  ) : (
+                    <img
+                      src={project.src}
+                      alt={project.title}
+                      className="project-img"
+                    />
+                  )}
+                </center>
+                <Card.Body>
+                  <Card.Text style={{ textAlign: "justify" }}>
+                    {project.description}
+                  </Card.Text>
+                  {project.buttons &&
+                    project.buttons.map((button, btnIndex) => (
+                      <Button
+                        key={btnIndex}
+                        href={button.href}
+                        target="_blank"
+                        className="mr-2 mb-2"
+                      >
+                        <i className={`fa ${button.icon}`}></i> {button.text}
+                      </Button>
+                    ))}
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
         </center>
       </Row>
     </Container>
