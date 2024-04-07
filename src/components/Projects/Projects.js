@@ -8,7 +8,7 @@ import whatsapp from "../../Assets/Projects/whatsapp.mp4";
 import genetic from "../../Assets/Projects/genetic.mp4";
 import spacex from "../../Assets/Projects/spacex.mp4";
 import Card from "react-bootstrap/Card";
-import pdf from "../../Assets/Report.pdf";
+//import pdf from "../../Assets/Report.pdf";
 import Button from "react-bootstrap/Button";
 import Devops from "../../Assets/Projects/Devops.jpeg";
 
