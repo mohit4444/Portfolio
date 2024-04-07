@@ -20,7 +20,7 @@ const projectDetails = [
     description:
       "An autonomous boat navigation system for narrow water channels using TensorFlow and p5.js, combining neural networks with genetic algorithms for improved safety and efficiency in marine navigation.",
     buttons: [
-      { href: pdf, text: "Research paper", icon: "far fa-file-alt" },
+      // { href: pdf, text: "Research paper", icon: "far fa-file-alt" },
       {
         href: "https://github.com/mohit4444/Autonomous-navigation-system-through-confined-waters",
         text: "Source code",
