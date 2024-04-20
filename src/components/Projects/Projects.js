@@ -9,7 +9,6 @@ import genetic from "../../Assets/Projects/genetic.mp4";
 import spacex from "../../Assets/Projects/spacex.mp4";
 import Card from "react-bootstrap/Card";
 //import pdf from "../../Assets/Report.pdf";
-import Button from "react-bootstrap/Button";
 import Devops from "../../Assets/Projects/Devops.jpeg";
 
 const projectDetails = [
@@ -137,14 +136,18 @@ function Projects() {
                   </Card.Text>
                   {project.buttons &&
                     project.buttons.map((button, btnIndex) => (
-                      <Button
+                      <a
                         key={btnIndex}
                         href={button.href}
                         target="_blank"
-                        className="mr-2 mb-2"
+                        className="mr-2 mb-2 icons"
+                        rel="noreferrer"
                       >
-                        <i className={`${button.icon}`}></i> {button.text}
-                      </Button>
+                        <i className={`${button.icon} icons-dtls`}>
+                          {"    "}
+                          {button.text}
+                        </i>
+                      </a>
                     ))}
                 </Card.Body>
               </Card>

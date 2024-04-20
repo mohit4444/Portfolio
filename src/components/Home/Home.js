@@ -2,9 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../../style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
-import homeLogo from "../../Assets/home-main.svg";
+//import homeLogo from "../../Assets/home-main.svg";
 import Type from "./Type";
-import Button from "react-bootstrap/Button";
 import pdf from "../../Assets/Mohit Bidikar CV.pdf";
 import GitHubCalendar from "react-github-calendar";
 
@@ -21,12 +20,13 @@ function Home() {
           </h1>
           <Type />
           <br></br>
-          <Button id="cv" href={pdf} target="_blank">
-            <i className="far fa-file-alt"> CV</i>
-          </Button>
+          <br></br>
+          <a href={pdf} target="_blank" className="icons" rel="noreferrer">
+            <i className="far fa-file-alt icons-dtls"> CV</i>
+          </a>
         </Col>
         <Col md={5}>
-          <img src={homeLogo} alt="home pic" className="img-fluid" />
+          {/* <img src={homeLogo} alt="home pic" className="img-fluid" /> */}
         </Col>
       </Row>
       <Row>
@@ -51,7 +51,7 @@ function Home() {
           fontSize={20}
           theme={{
             light: ["black", "rebeccapurple"],
-            dark: ["black", "red"],
+            dark: ["black", "orange"],
           }}
           username="mohit4444"
         />

@@ -152,33 +152,33 @@ function Skills() {
       <Row>
         <Col md={12} className="center-aligned-div">
           <p>Feel free to connect with me</p>
-          <ul className="social-links">
-            <li className="social-icons">
+          <ul className="links">
+            <li className="icons">
               <a
                 href="https://github.com/mohit4444"
                 target="_blank"
                 rel="noreferrer"
-                className="home-social-icons"
+                className="icons-dtls"
               >
                 <i className="fab fa-github"></i>
               </a>
             </li>
-            <li className="social-icons">
+            <li className="icons">
               <a
                 href="https://in.linkedin.com/in/mohit-bidikar-756348123"
                 target="_blank"
                 rel="noreferrer"
-                className="home-social-icons"
+                className="icons-dtls"
               >
                 <i className="fab fa-linkedin"></i>
               </a>
             </li>
-            <li className="social-icons">
+            <li className="icons">
               <a
                 href="https://www.instagram.com/mohitttt4/"
                 target="_blank"
                 rel="noreferrer"
-                className="home-social-icons"
+                className="icons-dtls"
               >
                 <i className="fab fa-instagram"></i>
               </a>

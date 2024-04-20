@@ -3,10 +3,9 @@
 :root {
   /* color and font variables */
   --primary-bg-color: black;
-  --secondary-bg-color: #623686;
-  --tertiary-bg-color: #6d20c5d7;
+  --secondary-bg-color: grey;
   --text-color: white;
-  --accent-color: red;
+  --accent-color: #d2691e;
   --font-primary: "Varela Round", sans-serif;
   --font-secondary: "Raleway", sans-serif;
 }
@@ -160,7 +159,6 @@ h2 {
 }
 
 .project-card-view:hover {
-  transform: scale(1.02);
   overflow: hidden;
 }
 
@@ -170,19 +168,6 @@ h2 {
   margin-top: 10px;
   margin-bottom: 10px;
   border-bottom: 4px solid var(--accent-color);
-}
-
-.btn-primary {
-  color: var(--text-color);
-  font-size: 25px;
-  background-color: var(--secondary-bg-color) !important;
-  border-color: var(--secondary-bg-color) !important;
-}
-
-.btn-primary:hover {
-  color: var(--text-color);
-  background-color: var(--tertiary-bg-color) !important;
-  border-color: var(--tertiary-bg-color) !important;
 }
 
 .project-video {
@@ -197,31 +182,29 @@ h2 {
   margin: 15px;
 }
 
-.social-links {
+.links {
   padding-inline-start: 0;
   margin-bottom: 50px;
 }
 
-.social-icons {
+.icons {
   display: inline-block;
   margin: 10px;
 }
 
-.home-social-icons {
+.icons-dtls {
   position: relative;
-  padding: 5px;
-  width: 60px;
-  height: 60px;
+  padding: 8px;
+  font-weight: bold;
   text-align: center;
-  font-size: 2.5em;
-  line-height: 43px;
+  font-size: 1.5em;
   background: var(--text-color);
-  border-radius: 10px;
+  border-radius: 5px;
   transition: 0.5s;
   color: var(--primary-bg-color);
 }
 
-.home-social-icons:hover {
+.icons-dtls:hover {
   color: var(--accent-color);
 }
 
@@ -322,10 +305,6 @@ h2 {
   .project-img {
     width: 320px;
   }
-
-  #cv {
-    margin-top: 25px;
-  }
 }
 
 /* Adjusting style for tablets */
@@ -346,9 +325,5 @@ h2 {
 
   .project-img {
     width: 400px;
-  }
-
-  #cv {
-    margin-top: 25px;
   }
 }
