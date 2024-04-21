@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../../style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -7,7 +7,16 @@ import pdf from "../../Assets/Mohit Bidikar CV.pdf";
 import GitHubCalendar from "react-github-calendar";
 
 function Home() {
+  const [isLightMode, setIsLightMode] = useState(false);
+
+  const toggleLightMode = () => {
+    setIsLightMode(!isLightMode);
+  };
+
   const root = document.documentElement;
+  root.style.setProperty("--primary-bg-color", isLightMode ? "white" : "black");
+  root.style.setProperty("--text-color", isLightMode ? "black" : "white");
+
   const githubTextColor = getComputedStyle(root)
     .getPropertyValue("--text-color")
     .trim();
@@ -31,6 +40,9 @@ function Home() {
           <Type />
           <br></br>
           <br></br>
+          <button onClick={toggleLightMode}>
+            {isLightMode ? "Dark Mode" : "Light Mode"}
+          </button>
           <a href={pdf} target="_blank" className="icons" rel="noreferrer">
             <i className="far fa-file-alt icons-dtls"> CV</i>
           </a>
