@@ -55,6 +55,7 @@ function Home() {
               width={48}
               className="react-switch"
               onColor={accentColor}
+              offColor={accentColor}
             />
           </div>
         </Col>
