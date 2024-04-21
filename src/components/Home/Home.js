@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../../style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -8,24 +8,26 @@ import GitHubCalendar from "react-github-calendar";
 
 function Home() {
   const [isLightMode, setIsLightMode] = useState(false);
+  const root = document.documentElement;
+
+  useEffect(() => {
+    root.style.setProperty(
+      "--primary-bg-color",
+      isLightMode ? "white" : "black"
+    );
+    root.style.setProperty("--text-color", isLightMode ? "black" : "white");
+  }, [root, isLightMode]);
+
+  const lightIcon = isLightMode ? "fa-moon" : "fa-sun";
+  const githubTextColor = isLightMode ? "black" : "white";
+  const githubTileColor = getComputedStyle(root)
+    .getPropertyValue("--accent-color")
+    .trim();
+  const githubBackgroundColor = isLightMode ? "white" : "black";
 
   const toggleLightMode = () => {
     setIsLightMode(!isLightMode);
   };
-
-  const root = document.documentElement;
-  root.style.setProperty("--primary-bg-color", isLightMode ? "white" : "black");
-  root.style.setProperty("--text-color", isLightMode ? "black" : "white");
-
-  const githubTextColor = getComputedStyle(root)
-    .getPropertyValue("--text-color")
-    .trim();
-  const githubTileColor = getComputedStyle(root)
-    .getPropertyValue("--accent-color")
-    .trim();
-  const githubBackgroundColor = getComputedStyle(root)
-    .getPropertyValue("--primary-bg-color")
-    .trim();
 
   return (
     <Container>
@@ -38,17 +40,16 @@ function Home() {
             I'm <strong data-text="Mohit Bidikar">Mohit Bidikar</strong>
           </h1>
           <Type />
-          <br></br>
-          <br></br>
-          <button onClick={toggleLightMode}>
-            {isLightMode ? "Dark Mode" : "Light Mode"}
-          </button>
           <a href={pdf} target="_blank" className="icons" rel="noreferrer">
             <i className="far fa-file-alt icons-dtls"> CV</i>
           </a>
         </Col>
-        <Col md={5}>
-          {/* <img src={homeLogo} alt="home pic" className="img-fluid" /> */}
+        <Col md={5} className="home-header">
+          <span onClick={toggleLightMode} className="icons">
+            <i className={`fas ${lightIcon} icons-dtls`}>
+              {isLightMode ? "Enable Dark Mode" : "Enable Light Mode"}
+            </i>
+          </span>
         </Col>
       </Row>
       <Row>
@@ -63,7 +64,6 @@ function Home() {
             formal education and practical experience equips me to offer
             innovative solutions in web and cross-platform mobile app
             development.
-            <br />
           </p>
         </Col>
       </Row>
