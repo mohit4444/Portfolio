@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Switch from "react-switch";
 import "../../style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Type from "./Type";
@@ -18,12 +19,9 @@ function Home() {
     root.style.setProperty("--text-color", isLightMode ? "black" : "white");
   }, [root, isLightMode]);
 
-  const lightIcon = isLightMode ? "fa-moon" : "fa-sun";
-  const githubTextColor = isLightMode ? "black" : "white";
-  const githubTileColor = getComputedStyle(root)
+  const accentColor = getComputedStyle(root)
     .getPropertyValue("--accent-color")
     .trim();
-  const githubBackgroundColor = isLightMode ? "white" : "black";
 
   const toggleLightMode = () => {
     setIsLightMode(!isLightMode);
@@ -33,7 +31,7 @@ function Home() {
     <Container>
       <Row>
         <Col md={12} className="home-header">
-          <div>
+          <div style={{ width: "90%" }}>
             <h1>
               Hi There! <span className="wave">👋🏻</span>
             </h1>
@@ -48,11 +46,16 @@ function Home() {
             </a>
           </div>
           <div>
-            <span onClick={toggleLightMode} className="icons">
-              <i className={`fas ${lightIcon} icons-dtls`}>
-                {isLightMode ? "Enable Dark Mode" : "Enable Light Mode"}
-              </i>
-            </span>
+            <Switch
+              onChange={toggleLightMode}
+              checked={isLightMode}
+              uncheckedIcon={<i className="fas fa-sun"></i>}
+              checkedIcon={<i className="fas fa-moon"></i>}
+              height={24}
+              width={48}
+              className="react-switch"
+              onColor={accentColor}
+            />
           </div>
         </Col>
       </Row>
@@ -73,11 +76,11 @@ function Home() {
       </Row>
       <Row style={{ justifyContent: "center" }}>
         <GitHubCalendar
-          style={{ color: githubTextColor }}
+          style={{ color: isLightMode ? "black" : "white" }}
           fontSize={20}
           theme={{
-            light: [githubBackgroundColor, githubTileColor],
-            dark: [githubBackgroundColor, githubTileColor],
+            light: [isLightMode ? "white" : "black", accentColor],
+            dark: [isLightMode ? "white" : "black", accentColor],
           }}
           username="mohit4444"
         />
