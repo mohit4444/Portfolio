@@ -32,24 +32,28 @@ function Home() {
   return (
     <Container>
       <Row>
-        <Col md={7} className="home-header">
-          <h1>
-            Hi There! <span className="wave">👋🏻</span>
-          </h1>
-          <h1>
-            I'm <strong data-text="Mohit Bidikar">Mohit Bidikar</strong>
-          </h1>
-          <Type />
-          <a href={pdf} target="_blank" className="icons" rel="noreferrer">
-            <i className="far fa-file-alt icons-dtls"> CV</i>
-          </a>
-        </Col>
-        <Col md={5} className="home-header">
-          <span onClick={toggleLightMode} className="icons">
-            <i className={`fas ${lightIcon} icons-dtls`}>
-              {isLightMode ? "Enable Dark Mode" : "Enable Light Mode"}
-            </i>
-          </span>
+        <Col md={12} className="home-header">
+          <div>
+            <h1>
+              Hi There! <span className="wave">👋🏻</span>
+            </h1>
+            <h1>
+              I'm <strong data-text="Mohit Bidikar">Mohit Bidikar</strong>
+            </h1>
+            <Type />
+            <br></br>
+            <br></br>
+            <a href={pdf} target="_blank" className="icons" rel="noreferrer">
+              <i className="far fa-file-alt icons-dtls"> CV</i>
+            </a>
+          </div>
+          <div>
+            <span onClick={toggleLightMode} className="icons">
+              <i className={`fas ${lightIcon} icons-dtls`}>
+                {isLightMode ? "Enable Dark Mode" : "Enable Light Mode"}
+              </i>
+            </span>
+          </div>
         </Col>
       </Row>
       <Row>

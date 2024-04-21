@@ -3,12 +3,10 @@ import Typewriter from "typewriter-effect";
 
 function Type() {
   return (
-    <Typewriter color="red"
+    <Typewriter
+      color="red"
       options={{
-        strings: [
-          "MERN Stack Developer",
-          "Java Developer"
-        ],
+        strings: ["MERN Stack Developer", "Java Developer"],
         autoStart: true,
         loop: true,
         deleteSpeed: 50,
