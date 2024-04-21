@@ -2,12 +2,22 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../../style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
-//import homeLogo from "../../Assets/home-main.svg";
 import Type from "./Type";
 import pdf from "../../Assets/Mohit Bidikar CV.pdf";
 import GitHubCalendar from "react-github-calendar";
 
 function Home() {
+  const root = document.documentElement;
+  const githubTextColor = getComputedStyle(root)
+    .getPropertyValue("--text-color")
+    .trim();
+  const githubTileColor = getComputedStyle(root)
+    .getPropertyValue("--accent-color")
+    .trim();
+  const githubBackgroundColor = getComputedStyle(root)
+    .getPropertyValue("--primary-bg-color")
+    .trim();
+
   return (
     <Container>
       <Row>
@@ -47,11 +57,11 @@ function Home() {
       </Row>
       <Row style={{ justifyContent: "center" }}>
         <GitHubCalendar
-          style={{ color: "white" }}
+          style={{ color: githubTextColor }}
           fontSize={20}
           theme={{
-            light: ["black", "rebeccapurple"],
-            dark: ["black", "orange"],
+            light: [githubBackgroundColor, githubTileColor],
+            dark: [githubBackgroundColor, githubTileColor],
           }}
           username="mohit4444"
         />
