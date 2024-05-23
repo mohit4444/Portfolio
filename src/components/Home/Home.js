@@ -64,14 +64,12 @@ function Home() {
         <Col md={12} className="center-aligned-div">
           <h1>My journey so far</h1>
           <p>
-            I have over 4 years of experience in software development. My
-            journey has led me to explore a myriad of technologies, including
-            Javascript (React, Node, Express), Java, PostgreSQL, and MongoDB.
-            Additionally, I recently wrapped up my MSc in Advanced Computer
-            Science from the University of York in November 2023. This blend of
-            formal education and practical experience equips me to offer
-            innovative solutions in web and cross-platform mobile app
-            development.
+            I have over four years of experience in software development, during
+            which I have explored a wide range of technologies, including
+            JavaScript (React, Node, Express), Java, PostgreSQL, MongoDB,
+            Docker, and AWS. I hold both an MSc and a B.Eng in Computer Science.
+            This blend of formal education and practical experience enables me
+            to offer innovative software solutions.
           </p>
         </Col>
       </Row>

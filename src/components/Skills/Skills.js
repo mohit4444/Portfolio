@@ -3,43 +3,6 @@ import SkillsContent from "./SkillsContent";
 import "../../style.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Techstack from "./Techstack";
-import Slider from "react-slick";
-import javascript2 from "../../Assets/Certifications/javascript2.jpg";
-import frontend from "../../Assets/Certifications/frontend.jpg";
-import sql2 from "../../Assets/Certifications/sql2.jpg";
-import node from "../../Assets/Certifications/node.jpg";
-import react from "../../Assets/Certifications/react.jpg";
-import javascript from "../../Assets/Certifications/javascript.jpg";
-
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  responsive: [
-    { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 2 } },
-    { breakpoint: 768, settings: { slidesToShow: 1, slidesToScroll: 1 } },
-  ],
-};
-
-const certifications = [
-  {
-    path: javascript2,
-    link: "https://www.hackerrank.com/certificates/aa0a8d75ae5a",
-  },
-  {
-    path: frontend,
-    link: "https://www.hackerrank.com/certificates/7bd7a2e87bae",
-  },
-  { path: sql2, link: "https://www.hackerrank.com/certificates/3b5fbf6357fa" },
-  { path: node, link: "https://www.hackerrank.com/certificates/b78da0ea5bf6" },
-  { path: react, link: "https://www.hackerrank.com/certificates/0eac8ec01b1c" },
-  {
-    path: javascript,
-    link: "https://www.hackerrank.com/certificates/8ecb8b05c580",
-  },
-];
 
 const skillsContentData = [
   {
@@ -84,21 +47,16 @@ const skillsContentData = [
 
 const techStackIcons = [
   "devicon-javascript-plain ",
-  "devicon-nodejs-plain-wordmark",
-  "devicon-express-original-wordmark",
+  "devicon-amazonwebservices-plain-wordmark",
   "devicon-react-original-wordmark",
+  "devicon-nodejs-plain-wordmark",
   "devicon-mongodb-plain-wordmark",
-  "cib-graphql",
-  "cib-redux",
+  "cib-python",
   "devicon-selenium-original",
   "devicon-git-plain-wordmark",
-  "devicon-bootstrap-plain-wordmark",
   "cib-postgresql",
   "cib-docker",
   "cib-java",
-  "devicon-amazonwebservices-plain-wordmark",
-  "devicon-nginx-original",
-  "devicon-sass-original",
   "devicon-tensorflow-original",
   "devicon-typescript-plain",
 ];
@@ -120,30 +78,6 @@ function Skills() {
           ))}
         </Row>
       ))}
-      <Row>
-        <Col md={12}>
-          <center>
-            <h5 style={{ color: "white" }} className="resume-title">
-              Certifications
-            </h5>
-          </center>
-          <Slider {...settings}>
-            {certifications.map((cert, index) => (
-              <div key={index}>
-                <center>
-                  <a href={cert.link} target="_blank" rel="noreferrer">
-                    <img
-                      className="slideimg"
-                      src={cert.path}
-                      alt="certification"
-                    ></img>
-                  </a>
-                </center>
-              </div>
-            ))}
-          </Slider>
-        </Col>
-      </Row>
       <Row style={{ color: "white", justifyContent: "center" }}>
         {techStackIcons.map((iconName, index) => (
           <Techstack key={index} iconName={iconName} />
